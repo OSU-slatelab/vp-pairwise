@@ -13,7 +13,7 @@ All code was developed on Python 3.7. Additional requirements include:
 * pytorch >= 1.4.0
 * transformers >= 3.0.2 ([Link](https://huggingface.co/transformers/))
 * pretrained BERT `bert-based-uncased` ([Link](https://huggingface.co/bert-base-uncased)) 
-* FAISS toolkit for efficient nearest neighbor ([Link](https://github.com/facebookresearch/faiss))
+* FAISS toolkit for efficient nearest neighbor search ([Link](https://github.com/facebookresearch/faiss))
 
 # References
 
