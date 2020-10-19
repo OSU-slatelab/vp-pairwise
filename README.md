@@ -12,6 +12,7 @@ We implement this with three underlying architectures:
 All code was developed on Python 3.7. Additional requirements include:
 * pytorch >= 1.4.0
 * transformers >= 3.0.2 ([Link](https://huggingface.co/transformers/))
+* pretrained BERT `bert-based-uncased` ([Link](https://huggingface.co/bert-base-uncased)) 
 * FAISS toolkit for efficient nearest neighbor ([Link](https://github.com/facebookresearch/faiss))
 
 # References
@@ -23,4 +24,6 @@ All code was developed on Python 3.7. Additional requirements include:
 
 \[3\] Yoon Kim, “Convolutional neural networks for sentence classification,” in EMNLP 2014.
 
-\[4\] Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio, “A structured self-attentive sentence embedding,”, in ICLR 2017.
+\[4\] Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio, “A structured self-attentive sentence embedding,” in ICLR 2017.
+
+\[5\] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova, “Bert: Pre-training of deep bidirec-tional transformers for language understanding,” in NAACL 2019.
