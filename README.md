@@ -6,6 +6,8 @@ In this project, we implement a novel training framework to eliminate class-imab
 
 All code was developed on Python 3.7. Additional requirements include:
 * pytorch >= 1.4.0
+* transformers >= 3.0.2 [Link](https://huggingface.co/transformers/)
+* FAISS toolkit for efficient nearest neighbor [Link](https://github.com/facebookresearch/faiss)
 
 
 \[1\] Raia Hadsell, Sumit Chopra, and Yann LeCun, “Dimensionality reduction by learning an invariant mapping,” in 2006 IEEE Computer Society Conference on ComputerVision and Pattern Recognition (CVPR’06). IEEE, 2006.
