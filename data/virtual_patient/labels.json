@@ -1,0 +1,348 @@
+{"label": 257, "text": ["is", "the", "pain", "sharp"]}
+{"label": 188, "text": ["have", "you", "seen", "anyone", "else"]}
+{"label": 84, "text": ["does", "the", "pain", "improve", "with", "exercise"]}
+{"label": 330, "text": ["when", "is", "the", "pain", "most", "severe"]}
+{"label": 42, "text": ["are", "you", "sexually", "active"]}
+{"label": 246, "text": ["is", "the", "frequent", "urination", "constant"]}
+{"label": 239, "text": ["i", "am", "medical", "student"]}
+{"label": 187, "text": ["have", "you", "noticed", "pain", "while", "urinating"]}
+{"label": 335, "text": ["when", "was", "your", "last", "tetanus", "shot"]}
+{"label": 326, "text": ["when", "did", "the", "frequent", "urination", "start"]}
+{"label": 127, "text": ["do", "you", "have", "a", "weapon"]}
+{"label": 217, "text": ["how", "is", "your", "diet"]}
+{"label": 34, "text": ["are", "you", "mr", ".", "wilkins"]}
+{"label": 154, "text": ["has", "the", "inability", "to", "work", "caused", "problems"]}
+{"label": 200, "text": ["how", "did", "your", "grandparents", "die"]}
+{"label": 231, "text": ["how", "much", "ibuprofen", "have", "you", "taken"]}
+{"label": 327, "text": ["when", "did", "the", "pain", "start"]}
+{"label": 121, "text": ["do", "you", "have", "any", "problems", "with", "your", "hip"]}
+{"label": 123, "text": ["do", "you", "have", "any", "trouble", "sleeping"]}
+{"label": 179, "text": ["have", "you", "had", "blood", "glucose", "checked"]}
+{"label": 269, "text": ["name", "and", "date", "of", "birth"]}
+{"label": 277, "text": ["should", "i", "call", "you", "by", "a", "different", "name"]}
+{"label": 339, "text": ["where", "is", "the", "pain"]}
+{"label": 78, "text": ["does", "it", "hurt", "to", "touch", "your", "back"]}
+{"label": 192, "text": ["have", "you", "tried", "heat", "or", "ice"]}
+{"label": 111, "text": ["do", "you", "have", "any", "bowel", "problems"]}
+{"label": 149, "text": ["good"]}
+{"label": 215, "text": ["how", "is", "your", "body", "part"]}
+{"label": 264, "text": ["is", "your", "job", "stressful"]}
+{"label": 169, "text": ["have", "you", "ever", "had", "any", "serious", "illnesses"]}
+{"label": 171, "text": ["have", "you", "ever", "smoked"]}
+{"label": 284, "text": ["tell", "me", "more", "about", "your", "back", "pain"]}
+{"label": 196, "text": ["how", "about", "your", "body", "part"]}
+{"label": 131, "text": ["do", "you", "have", "loss", "of", "bowel", "or", "bladder", "control"]}
+{"label": 191, "text": ["have", "you", "tried", "any", "treatment"]}
+{"label": 94, "text": ["do", "you", "drink", "coffee"]}
+{"label": 144, "text": ["do", "you", "see", "your", "parents", "often"]}
+{"label": 136, "text": ["do", "you", "have", "support"]}
+{"label": 129, "text": ["do", "you", "have", "frequent", "urination"]}
+{"label": 279, "text": ["sounds", "like"]}
+{"label": 71, "text": ["discussion", "is", "confidential"]}
+{"label": 23, "text": ["are", "you", "current", "on", "vaccinations"]}
+{"label": 181, "text": ["have", "you", "had", "physical", "therapy"]}
+{"label": 323, "text": ["what", "was", "the", "dose", "of", "aspirin"]}
+{"label": 30, "text": ["are", "you", "having", "any", "other", "pain"]}
+{"label": 52, "text": ["can", "you", "care", "for", "yourself"]}
+{"label": 266, "text": ["i", "will", "do", "my", "best"]}
+{"label": 12, "text": ["any", "prescription", "medication"]}
+{"label": 344, "text": ["why", "do", "you", "take", "the", "supplements"]}
+{"label": 100, "text": ["do", "you", "feel", "anxious"]}
+{"label": 270, "text": ["negative", "symptoms"]}
+{"label": 151, "text": ["has", "anyone", "expressed", "concern", "about", "your", "drinking"]}
+{"label": 108, "text": ["do", "you", "have", "any", "allergies"]}
+{"label": 38, "text": ["are", "your", "parents", "healthy"]}
+{"label": 340, "text": ["who", "do", "you", "live", "with"]}
+{"label": 62, "text": ["did", "i", "miss", "anything"]}
+{"label": 134, "text": ["do", "you", "have", "relatives"]}
+{"label": 80, "text": ["does", "it", "hurt", "when", "you", "bend"]}
+{"label": 39, "text": ["are", "your", "parents", "living"]}
+{"label": 309, "text": ["what", "do", "you", "think", "is", "the", "problem"]}
+{"label": 159, "text": ["have", "you", "been", "incontinent"]}
+{"label": 36, "text": ["are", "your", "grandparents", "living"]}
+{"label": 300, "text": ["what", "brings", "you", "in", "today"]}
+{"label": 106, "text": ["do", "you", "have", "a", "history", "of", "depression"]}
+{"label": 132, "text": ["do", "you", "have", "numbness", "or", "tingling"]}
+{"label": 103, "text": ["do", "you", "have", "a", "cause", "for", "the", "pain"]}
+{"label": 81, "text": ["does", "moving", "increase", "the", "pain"]}
+{"label": 60, "text": ["did", "anything", "happen", "to", "cause", "the", "frequent", "urination"]}
+{"label": 221, "text": ["how", "is", "your", "pain", "now"]}
+{"label": 189, "text": ["have", "you", "tried", "anything", "else", "for", "the", "pain"]}
+{"label": 255, "text": ["is", "the", "pain", "new"]}
+{"label": 9, "text": ["any", "other", "past", "sexual", "partners"]}
+{"label": 307, "text": ["what", "do", "you", "think", "about", "the", "buckeyes"]}
+{"label": 61, "text": ["did", "anything", "happen", "to", "cause", "the", "pain"]}
+{"label": 124, "text": ["do", "you", "have", "any", "weakness"]}
+{"label": 125, "text": ["do", "you", "have", "a", "sexually", "transmitted", "infection"]}
+{"label": 237, "text": ["how", "old", "are", "your", "grandparents"]}
+{"label": 219, "text": ["how", "is", "your", "hip"]}
+{"label": 218, "text": ["how", "is", "your", "family"]}
+{"label": 104, "text": ["do", "you", "have", "a", "doctor"]}
+{"label": 112, "text": ["do", "you", "have", "any", "children"]}
+{"label": 173, "text": ["have", "you", "had", "a", "colonoscopy"]}
+{"label": 186, "text": ["have", "you", "noticed", "any", "physical", "changes"]}
+{"label": 66, "text": ["did", "you", "feel", "or", "hear", "a", "pop"]}
+{"label": 243, "text": ["i", "'ll", "go", "report", "to", "the", "doctor"]}
+{"label": 166, "text": ["have", "you", "ever", "been", "in", "the", "military"]}
+{"label": 72, "text": ["do", "an", "exam", "now"]}
+{"label": 73, "text": ["do", "any", "positions", "make", "the", "pain", "worse", "or", "better"]}
+{"label": 98, "text": ["do", "you", "eat", "healthy", "food"]}
+{"label": 197, "text": ["how", "are", "you"]}
+{"label": 276, "text": ["please", "repeat", "that"]}
+{"label": 261, "text": ["is", "urination", "always", "painful"]}
+{"label": 31, "text": ["are", "you", "healthy"]}
+{"label": 306, "text": ["what", "do", "you", "eat", "each", "day"]}
+{"label": 114, "text": ["do", "you", "have", "any", "hip", "pain"]}
+{"label": 77, "text": ["does", "anything", "else", "help", "the", "pain"]}
+{"label": 233, "text": ["how", "often", "do", "you", "take", "the", "ibuprofen"]}
+{"label": 314, "text": ["what", "is", "your", "name"]}
+{"label": 288, "text": ["that", "was", "nice"]}
+{"label": 59, "text": ["describe", "the", "pain"]}
+{"label": 76, "text": ["does", "any", "position", "relieve", "the", "pain"]}
+{"label": 95, "text": ["do", "you", "drink", "enough", "fluid"]}
+{"label": 260, "text": ["is", "this", "the", "first", "time", "you", "have", "had", "this", "pain"]}
+{"label": 6, "text": ["any", "heart", "problems", "in", "your", "family"]}
+{"label": 259, "text": ["is", "there", "anything", "else", "i", "can", "help", "you", "with"]}
+{"label": 70, "text": ["did", "you", "take", "ibuprofen", "today"]}
+{"label": 295, "text": ["were", "you", "doing", "anything", "when", "the", "pain", "started"]}
+{"label": 29, "text": ["are", "you", "happy"]}
+{"label": 341, "text": ["who", "prescribed", "the", "medicine"]}
+{"label": 334, "text": ["when", "was", "your", "last", "period"]}
+{"label": 87, "text": ["does", "the", "pain", "keep", "you", "up", "at", "night"]}
+{"label": 13, "text": ["any", "previous", "heart", "problems"]}
+{"label": 138, "text": ["do", "you", "live", "alone"]}
+{"label": 293, "text": ["was", "the", "onset", "of", "the", "frequent", "urination", "sudden"]}
+{"label": 162, "text": ["have", "you", "been", "resting"]}
+{"label": 163, "text": ["have", "you", "ever", "been", "dizzy"]}
+{"label": 16, "text": ["are", "you", "able", "to", "drive"]}
+{"label": 312, "text": ["what", "have", "you", "tried", "for", "the", "pain"]}
+{"label": 63, "text": ["did", "it", "happen", "at", "work"]}
+{"label": 37, "text": ["are", "your", "muscles", "sore"]}
+{"label": 157, "text": ["has", "your", "weight", "changed"]}
+{"label": 8, "text": ["any", "other", "hospitalizations"]}
+{"label": 91, "text": ["does", "your", "hip", "hurt"]}
+{"label": 4, "text": ["any", "family", "history", "of", "illness"]}
+{"label": 28, "text": ["are", "you", "frustrated"]}
+{"label": 228, "text": ["how", "many", "sexual", "partners"]}
+{"label": 48, "text": ["are", "you", "taking", "any", "medication", "for", "the", "pain"]}
+{"label": 274, "text": ["none"]}
+{"label": 161, "text": ["have", "you", "been", "off", "work"]}
+{"label": 90, "text": ["does", "your", "back", "hurt", "when", "you", "work"]}
+{"label": 290, "text": ["today", "we", "have", "15", "minutes"]}
+{"label": 54, "text": ["can", "you", "move", "around", "with", "the", "pain"]}
+{"label": 336, "text": ["when", "were", "you", "born"]}
+{"label": 105, "text": ["do", "you", "have", "a", "family"]}
+{"label": 14, "text": ["any", "prior", "surgeries"]}
+{"label": 343, "text": ["why", "do", "you", "take", "the", "medication"]}
+{"label": 118, "text": ["do", "you", "have", "any", "pain", "in", "your", "hip"]}
+{"label": 20, "text": ["are", "you", "active"]}
+{"label": 299, "text": ["what", "bothers", "you", "the", "most"]}
+{"label": 328, "text": ["when", "do", "you", "have", "the", "frequent", "urination"]}
+{"label": 320, "text": ["what", "makes", "the", "pain", "worse"]}
+{"label": 198, "text": ["how", "did", "the", "pain", "start"]}
+{"label": 254, "text": ["is", "the", "pain", "in", "your", "upper", "or", "lower", "back"]}
+{"label": 55, "text": ["can", "you", "point", "to", "the", "pain"]}
+{"label": 210, "text": ["how", "intense", "is", "the", "pain"]}
+{"label": 283, "text": ["tell", "me", "more", "about", "the", "saw", "palmetto"]}
+{"label": 238, "text": ["how", "old", "are", "your", "parents"]}
+{"label": 315, "text": ["what", "is", "your", "past", "medical", "history"]}
+{"label": 168, "text": ["have", "you", "ever", "had", "any", "chronic", "illnesses"]}
+{"label": 25, "text": ["are", "you", "depressed"]}
+{"label": 332, "text": ["when", "was", "the", "last", "time", "you", "saw", "a", "doctor"]}
+{"label": 119, "text": ["do", "you", "have", "any", "pets"]}
+{"label": 2, "text": ["any", "family", "history", "of", "depression"]}
+{"label": 113, "text": ["do", "you", "have", "any", "chronic", "illnesses"]}
+{"label": 319, "text": ["what", "makes", "the", "pain", "better"]}
+{"label": 102, "text": ["do", "you", "feel", "well"]}
+{"label": 262, "text": ["is", "your", "job", "physically", "demanding"]}
+{"label": 321, "text": ["what", "should", "i", "call", "you"]}
+{"label": 139, "text": ["do", "you", "mind", "if", "i", "call", "you", "jim"]}
+{"label": 310, "text": ["what", "else", "have", "you", "tried", "for", "the", "frequent", "urination"]}
+{"label": 236, "text": ["how", "old", "are", "you"]}
+{"label": 224, "text": ["how", "long", "have", "you", "been", "a", "worker"]}
+{"label": 115, "text": ["do", "you", "have", "any", "hobbies"]}
+{"label": 267, "text": ["i", "would", "like", "to", "get", "to", "know", "more"]}
+{"label": 232, "text": ["how", "much", "sleep"]}
+{"label": 222, "text": ["how", "is", "your", "social", "life"]}
+{"label": 285, "text": ["thanks"]}
+{"label": 202, "text": ["how", "else", "is", "the", "pain", "affecting", "you"]}
+{"label": 281, "text": ["tell", "me", "about", "yourself"]}
+{"label": 64, "text": ["did", "the", "ibuprofen", "help"]}
+{"label": 22, "text": ["are", "you", "current", "on", "bloodwork"]}
+{"label": 278, "text": ["social", "history"]}
+{"label": 96, "text": ["do", "you", "eat", "fast", "food"]}
+{"label": 89, "text": ["does", "this", "bother", "you", "mentally"]}
+{"label": 79, "text": ["does", "it", "hurt", "when", "not", "moving"]}
+{"label": 204, "text": ["how", "frequent", "is", "the", "frequent", "urination"]}
+{"label": 97, "text": ["do", "you", "eat", "fruit"]}
+{"label": 177, "text": ["have", "you", "had", "back", "injury", "before"]}
+{"label": 18, "text": ["are", "you", "able", "to", "stand"]}
+{"label": 44, "text": ["are", "you", "stressed"]}
+{"label": 175, "text": ["have", "you", "had", "any", "past", "bladder", "problems"]}
+{"label": 143, "text": ["do", "your", "body", "parts", "hurt"]}
+{"label": 305, "text": ["what", "do", "you", "do", "for", "fun"]}
+{"label": 5, "text": ["any", "heart", "problems"]}
+{"label": 301, "text": ["what", "ca", "n't", "you", "do", "at", "work"]}
+{"label": 56, "text": ["can", "you", "rate", "the", "pain"]}
+{"label": 223, "text": ["how", "long", "does", "the", "pain", "last"]}
+{"label": 193, "text": ["having", "mood", "changes"]}
+{"label": 273, "text": ["nice", "to", "see", "you"]}
+{"label": 253, "text": ["is", "the", "pain", "improving"]}
+{"label": 258, "text": ["is", "the", "pain", "worse", "in", "the", "morning", "or", "at", "night"]}
+{"label": 322, "text": ["what", "was", "the", "dose"]}
+{"label": 176, "text": ["have", "you", "had", "a", "prostate", "exam"]}
+{"label": 304, "text": ["what", "do", "you", "do", "for", "a", "living"]}
+{"label": 3, "text": ["any", "family", "history", "of", "hypertension"]}
+{"label": 174, "text": ["have", "you", "had", "an", "accident"]}
+{"label": 249, "text": ["is", "the", "frequent", "urination", "worse", "in", "the", "morning", "or", "at", "night"]}
+{"label": 214, "text": ["how", "is", "your", "bodily", "function"]}
+{"label": 126, "text": ["do", "you", "have", "a", "significant", "other"]}
+{"label": 324, "text": ["what", "were", "the", "pills", "called"]}
+{"label": 184, "text": ["have", "you", "noticed", "an", "odor", "in", "your", "urine"]}
+{"label": 325, "text": ["what", "would", "you", "like", "me", "to", "do"]}
+{"label": 160, "text": ["have", "you", "been", "nauseous"]}
+{"label": 302, "text": ["what", "caused", "the", "past", "back", "pain"]}
+{"label": 241, "text": ["i", "have", "all", "the", "information", "i", "need"]}
+{"label": 137, "text": ["do", "you", "have", "vision", "changes"]}
+{"label": 53, "text": ["can", "you", "do", "normal", "activities"]}
+{"label": 146, "text": ["do", "you", "use", "any", "contraception"]}
+{"label": 263, "text": ["is", "your", "job", "pleasurable"]}
+{"label": 41, "text": ["are", "your", "siblings", "healthy"]}
+{"label": 201, "text": ["how", "else", "is", "the", "frequent", "urination", "affecting", "you"]}
+{"label": 101, "text": ["do", "you", "feel", "safe", "at", "home"]}
+{"label": 117, "text": ["do", "you", "have", "any", "pain"]}
+{"label": 347, "text": ["you", "seem", "uncomfortable"]}
+{"label": 69, "text": ["did", "you", "hurt", "your", "back"]}
+{"label": 47, "text": ["are", "you", "taking", "any", "medication"]}
+{"label": 35, "text": ["are", "you", "nervous"]}
+{"label": 229, "text": ["how", "much", "do", "you", "drink"]}
+{"label": 1, "text": ["any", "chest", "pain"]}
+{"label": 43, "text": ["are", "you", "sick"]}
+{"label": 182, "text": ["have", "you", "noticed", "a", "discharge"]}
+{"label": 120, "text": ["do", "you", "have", "any", "problems", "urinating"]}
+{"label": 206, "text": ["how", "has", "the", "pain", "changed", "over", "time"]}
+{"label": 65, "text": ["did", "the", "pain", "start", "immediately"]}
+{"label": 272, "text": ["nice", "to", "meet", "you"]}
+{"label": 287, "text": ["that", "must", "be", "hard"]}
+{"label": 248, "text": ["is", "the", "frequent", "urination", "new"]}
+{"label": 152, "text": ["has", "the", "frequent", "urination", "become", "worse", "or", "better"]}
+{"label": 208, "text": ["how", "has", "your", "day", "been", "going"]}
+{"label": 128, "text": ["do", "you", "have", "exposure", "to", "chemicals"]}
+{"label": 251, "text": ["is", "the", "pain", "deep"]}
+{"label": 199, "text": ["how", "did", "you", "get", "here", "today"]}
+{"label": 107, "text": ["do", "you", "have", "annual", "exams"]}
+{"label": 141, "text": ["do", "you", "need", "a", "note", "for", "work"]}
+{"label": 46, "text": ["are", "you", "sure"]}
+{"label": 32, "text": ["are", "you", "in", "a", "relationship"]}
+{"label": 140, "text": ["do", "you", "mind", "if", "i", "call", "you", "jim"]}
+{"label": 212, "text": ["how", "is", "work"]}
+{"label": 275, "text": ["ok", "then"]}
+{"label": 333, "text": ["when", "was", "your", "last", "bowel", "movement"]}
+{"label": 147, "text": ["do", "you", "use", "illegal", "drugs"]}
+{"label": 286, "text": ["that", "must", "be", "awful"]}
+{"label": 27, "text": ["are", "you", "exposed", "to", "secondhand", "smoke"]}
+{"label": 130, "text": ["do", "you", "have", "headaches"]}
+{"label": 24, "text": ["are", "you", "dating", "anyone"]}
+{"label": 15, "text": ["appetite"]}
+{"label": 58, "text": ["describe", "the", "furniture", "you", "were", "lifting"]}
+{"label": 148, "text": ["family", "history"]}
+{"label": 153, "text": ["has", "the", "frequent", "urination", "stopped", "you", "from", "doing", "anything"]}
+{"label": 183, "text": ["have", "you", "noticed", "an", "itch"]}
+{"label": 318, "text": ["what", "makes", "the", "frequent", "urination", "worse"]}
+{"label": 313, "text": ["what", "is", "your", "goal", "for", "this", "visit"]}
+{"label": 234, "text": ["how", "often", "do", "you", "take", "the", "saw", "palmetto"]}
+{"label": 311, "text": ["what", "else", "have", "you", "tried", "for", "the", "pain"]}
+{"label": 342, "text": ["who", "supports", "you"]}
+{"label": 170, "text": ["have", "you", "ever", "had", "a", "sexually", "transmitted", "infection"]}
+{"label": 329, "text": ["when", "do", "you", "have", "the", "pain"]}
+{"label": 88, "text": ["does", "the", "pain", "radiate"]}
+{"label": 298, "text": ["what", "are", "your", "allergy", "reactions"]}
+{"label": 280, "text": ["tell", "me", "about", "your", "grandparents"]}
+{"label": 308, "text": ["what", "do", "you", "think", "about", "this", "weather"]}
+{"label": 331, "text": ["when", "was", "the", "last", "time", "you", "had", "intercourse"]}
+{"label": 303, "text": ["what", "concerns", "you", "about", "the", "pain"]}
+{"label": 33, "text": ["are", "you", "married"]}
+{"label": 116, "text": ["do", "you", "have", "any", "medical", "problems"]}
+{"label": 93, "text": ["do", "you", "drink"]}
+{"label": 57, "text": ["describe", "the", "frequent", "urination"]}
+{"label": 242, "text": ["i", "have", "more", "questions"]}
+{"label": 207, "text": ["how", "has", "this", "affected", "you"]}
+{"label": 155, "text": ["has", "the", "pain", "affected", "your", "activity"]}
+{"label": 110, "text": ["do", "you", "have", "any", "bladder", "problems"]}
+{"label": 250, "text": ["is", "the", "pain", "constant"]}
+{"label": 225, "text": ["how", "long", "have", "you", "been", "taking", "the", "aspirin"]}
+{"label": 271, "text": ["nice", "talking", "with", "you"]}
+{"label": 178, "text": ["have", "you", "had", "back", "pain", "before"]}
+{"label": 150, "text": ["goodbye"]}
+{"label": 45, "text": ["are", "you", "suicidal"]}
+{"label": 180, "text": ["have", "you", "had", "frequent", "urination", "before"]}
+{"label": 190, "text": ["have", "you", "tried", "anything", "for", "the", "frequent", "urination"]}
+{"label": 68, "text": ["did", "you", "have", "any", "trouble", "finding", "us"]}
+{"label": 291, "text": ["to", "summarize"]}
+{"label": 297, "text": ["were", "you", "lifting", "anything"]}
+{"label": 99, "text": ["do", "you", "exercise"]}
+{"label": 74, "text": ["does", "anyone", "in", "your", "family", "have", "back", "pain"]}
+{"label": 133, "text": ["do", "you", "have", "pain", "anywhere", "else"]}
+{"label": 289, "text": ["the", "doctor", "will", "be", "in"]}
+{"label": 235, "text": ["how", "often", "do", "you", "urinate"]}
+{"label": 85, "text": ["does", "the", "pain", "increase", "when", "you", "stand"]}
+{"label": 142, "text": ["do", "you", "prefer", "men", "or", "women"]}
+{"label": 67, "text": ["did", "you", "find", "a", "parking", "spot"]}
+{"label": 158, "text": ["have", "you", "been", "able", "to", "work"]}
+{"label": 211, "text": ["how", "is", "home"]}
+{"label": 216, "text": ["how", "is", "your", "cholesterol"]}
+{"label": 51, "text": ["are", "you", "taking", "supplements"]}
+{"label": 294, "text": ["was", "the", "onset", "of", "the", "pain", "sudden"]}
+{"label": 86, "text": ["does", "the", "pain", "interfere", "with", "work"]}
+{"label": 185, "text": ["have", "you", "noticed", "any", "blood", "in", "your", "urine"]}
+{"label": 156, "text": ["has", "the", "pain", "become", "worse", "or", "better"]}
+{"label": 203, "text": ["how", "far", "did", "you", "get", "in", "school"]}
+{"label": 240, "text": ["i", "am", "sorry"]}
+{"label": 145, "text": ["do", "you", "smoke"]}
+{"label": 21, "text": ["are", "you", "currently", "working"]}
+{"label": 252, "text": ["is", "the", "pain", "dull"]}
+{"label": 7, "text": ["any", "otc", "medication"]}
+{"label": 268, "text": ["my", "name", "is", "bob"]}
+{"label": 296, "text": ["were", "you", "healthy"]}
+{"label": 11, "text": ["any", "other", "sexual", "partners"]}
+{"label": 17, "text": ["are", "you", "able", "to", "sit"]}
+{"label": 10, "text": ["any", "other", "problems"]}
+{"label": 122, "text": ["do", "you", "have", "any", "questions"]}
+{"label": 75, "text": ["does", "any", "position", "make", "the", "pain", "worse"]}
+{"label": 82, "text": ["does", "that", "plan", "sound", "good"]}
+{"label": 50, "text": ["are", "you", "taking", "any", "other", "medication", "for", "pain"]}
+{"label": 292, "text": ["want", "to", "ask", "about"]}
+{"label": 165, "text": ["have", "you", "ever", "been", "in", "the", "hospital"]}
+{"label": 83, "text": ["does", "the", "frequent", "urination", "keep", "you", "up", "at", "night"]}
+{"label": 167, "text": ["have", "you", "ever", "been", "pregnant", "before"]}
+{"label": 316, "text": ["what", "is", "your", "religious", "preference"]}
+{"label": 195, "text": ["hopefully", "we", "can", "help", "you"]}
+{"label": 244, "text": ["is", "pain", "better", "when", "you", "lie", "down"]}
+{"label": 230, "text": ["how", "much", "do", "you", "work"]}
+{"label": 194, "text": ["hello"]}
+{"label": 345, "text": ["would", "you", "like", "some", "pain", "medication"]}
+{"label": 49, "text": ["are", "you", "taking", "any", "other", "medication"]}
+{"label": 227, "text": ["how", "long", "have", "you", "had", "the", "pain"]}
+{"label": 265, "text": ["i", "understand", "completely"]}
+{"label": 247, "text": ["is", "the", "frequent", "urination", "improving"]}
+{"label": 164, "text": ["have", "you", "ever", "been", "in", "an", "accident"]}
+{"label": 92, "text": ["do", "you", "do", "any", "heavy", "lifting", "at", "work"]}
+{"label": 26, "text": ["are", "you", "divorced"]}
+{"label": 317, "text": ["what", "makes", "the", "frequent", "urination", "better"]}
+{"label": 135, "text": ["do", "you", "have", "siblings"]}
+{"label": 256, "text": ["is", "the", "pain", "on", "one", "side"]}
+{"label": 346, "text": ["you", "are", "welcome"]}
+{"label": 0, "text": ["any", "changes", "in", "your", "diet"]}
+{"label": 19, "text": ["are", "you", "abused"]}
+{"label": 282, "text": ["tell", "me", "about", "your", "work"]}
+{"label": 220, "text": ["how", "is", "your", "mood"]}
+{"label": 337, "text": ["where", "do", "you", "live"]}
+{"label": 40, "text": ["are", "your", "relatives", "healthy"]}
+{"label": 338, "text": ["where", "do", "you", "work"]}
+{"label": 205, "text": ["how", "frequent", "is", "the", "pain"]}
+{"label": 109, "text": ["do", "you", "have", "any", "associated", "symptoms"]}
+{"label": 226, "text": ["how", "long", "have", "you", "been", "taking", "the", "ibuprofen"]}
+{"label": 213, "text": ["how", "is", "your", "blood", "pressure"]}
+{"label": 209, "text": ["how", "have", "you", "been", "handling", "this"]}
+{"label": 245, "text": ["is", "pain", "worse", "when", "you", "lie", "down"]}
+{"label": 172, "text": ["have", "you", "ever", "taken", "any", "other", "medication"]}
