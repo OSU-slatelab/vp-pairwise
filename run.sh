@@ -1,0 +1,37 @@
+python -u main.py \
+    --word-vector "" \
+    --label-data "data/virtual_patient/labels.json" \
+    --traindev-data "data/virtual_patient/train.json" \
+    --dictionary "data/virtual_patient/vocab.json" \
+    --test-data "" \
+    --valid-data "" \
+    --attention-hops 2 \
+    --epochs 12 \
+    --stage2 3 \
+    --nclasses 348 \
+    --batch-size 512 \
+    --test-bsize 32 \
+    --penalization-coeff 0.00 \
+    --attention-type 'self' \
+    --margin-pos 0.8 \
+    --margin-neg 1.2 \
+    --beta-max 20.0 \
+    --beta-min 0.05 \
+    --lr 0.001 \
+    --num-pos 50000 \
+    --kfold-log "logs/vp.log" \
+    --nneighbors 1 \
+    --samp-freq 1 \
+    --num-keys 3000 \
+    --mode "comb" \
+    --lamb 0.85 \
+    --ploss_wt 0.25 \
+    --encoder-type "rnn" \
+    --prebert-path "bert/pretrained_models/" \
+    --bert-pooling "mean" \
+    --seed 1111 \
+    --norm-dist \
+    --rpos \
+    --rneg \
+    --kfold \
+    --cuda 
