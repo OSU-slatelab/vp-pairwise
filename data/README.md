@@ -2,7 +2,9 @@
 Virtual Patient data collected till 2017.
 
 Train size = 6827
+
 Test size = 2799
+
 No. of classes = 348
 
 Class Distribution:
