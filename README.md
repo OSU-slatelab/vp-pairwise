@@ -15,6 +15,11 @@ All code was developed on Python 3.7. Additional requirements include:
 * pretrained BERT `bert-based-uncased` ([Link](https://huggingface.co/bert-base-uncased)) 
 * FAISS toolkit for efficient nearest neighbor search ([Link](https://github.com/facebookresearch/faiss))
 
+# Usage
+For fine-tuning hyperparameters, run:
+<code> bash run_gs.sh <\code>
+
+
 # References
 
 \[1\] Raia Hadsell, Sumit Chopra, and Yann LeCun, “Dimensionality reduction by learning an invariant mapping,” in 2006 IEEE Computer Society Conference on ComputerVision and Pattern Recognition (CVPR’06). IEEE, 2006.
