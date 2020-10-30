@@ -16,9 +16,8 @@ All code was developed on Python 3.7. Additional requirements include:
 * FAISS toolkit for efficient nearest neighbor search ([Link](https://github.com/facebookresearch/faiss))
 
 # Usage
-For fine-tuning hyperparameters, run:
-<code> bash run_gs.sh </code>
-
+* For fine-tuning hyperparameters, run: <code> bash run_gs.sh </code>
+* For testing, run: <code> bash run_test.sh </code>.
 
 # References
 
