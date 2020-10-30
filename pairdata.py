@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import os
 import torch.nn.functional as F
-from transformers import BertTokenizer, DistilBertTokenizer
+from transformers import BertTokenizer
 from collections import defaultdict, OrderedDict
 import itertools
 import random
@@ -21,24 +21,12 @@ def shuffle_pairs(p,l):
     ps,ls = [list(t) for t in zip(*x)]
     return ps, ls
 
-def shuffle_pairs2(p,n):
-    pn = []
-    ll = []
-    for i in range(len(n)):
-        pn.append(n[i])
-        ll.append(0)
-        if i <= len(p) - 1:
-            pn.append(p[i])
-            ll.append(1)
-    return pn, ll
-        
-
 def get_random_samples(a, b, n):
     n_prod = len(a) * len(b)
     indices = random.sample(range(n_prod), n)
     return [(a[idx % len(a)], b[idx // len(a)]) for idx in indices]
 
-def package_pair(data, idx_pair, label, dictionary, is_train=True):
+def package_pair(data, idx_pair, label, dictionary, bert=False, is_train=True):
     
     def package1(data,dictionary,is_train=True):
         data = [json.loads(x) for x in data]
@@ -59,16 +47,6 @@ def package_pair(data, idx_pair, label, dictionary, is_train=True):
             targets = torch.tensor(targets, dtype=torch.long)
         return dat.t(),targets
 
-    idx1,idx2 = [list(t) for t in zip(*idx_pair)] 
-    pdata1 = [data[x] for x in idx1]
-    pdata2 = [data[x] for x in idx2]
-    data1,target1 = package1(pdata1, dictionary, is_train)
-    data2,target2 = package1(pdata2, dictionary, is_train)
-    targets = torch.tensor(label, dtype=torch.long)
-    return data1, data2, targets, target1, target2
-
-def package_pair_bert(data, idx_pair, label, dictionary, is_train=True):
-    
     def package2(data,dictionary,is_train=True):
         tokenizer = BertTokenizer.from_pretrained("bert-base-uncased") #DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
         data = [json.loads(x) for x in data]
@@ -80,54 +58,37 @@ def package_pair_bert(data, idx_pair, label, dictionary, is_train=True):
     idx1,idx2 = [list(t) for t in zip(*idx_pair)] 
     pdata1 = [data[x] for x in idx1]
     pdata2 = [data[x] for x in idx2]
-    data1,target1 = package2(pdata1, dictionary, is_train)
-    data2,target2 = package2(pdata2, dictionary, is_train)
-    targets = torch.tensor(label, dtype=torch.long)
-    return data1, data2, targets, target1, target2
+    if not bert:
+        data1,target1 = package1(pdata1, dictionary, is_train)
+        data2,target2 = package1(pdata2, dictionary, is_train)
+    else:
+        data1,target1 = package2(pdata1, dictionary, is_train)
+        data2,target2 = package2(pdata2, dictionary, is_train)
+    return data1, data2
 
-def bt_on_device(tokenizer, device):
+def bt_on_device(tokenizer, device, bert=False):
+    if not bert:
+        return tokenizer.to(device)
     t2 = {}
     for key, val in tokenizer.items():
         t2[key] = val.to(device)
     return t2
 
 class PairedData:
-    def __init__(self, nclasses, data, num_pos=50000, criterion=None):
+    def __init__(self, nclasses, data, num_pos=50000):
         self.pidx_pairs = []
         self.ci = []
         self.class_indices = []
         jsdata = [json.loads(x) for x in data]
         self.data = data
-        self.criterion = criterion
         self.nclasses = nclasses
         self.max_pts = 3000
         self.num_pos = num_pos
         for i in range(nclasses):
             idx_i = [ii for ii,x in enumerate(jsdata) if x['label'] == i]
             if len(idx_i) > 0:
-                self.ci.append(idx_i) #self.class_indices.append(idx_i) #self.ci.append(idx_i)
+                self.ci.append(idx_i)
         self.sample_pairs()
-        
-#            if len(idx_i) <= 1:
-#                continue
-#            pairs = list(itertools.combinations(idx_i,r=2))
-#            random.shuffle(pairs)
-#            self.pidx_pairs.append(pairs)
-#        rnclasses = len(self.pidx_pairs)
-#        negcls = len(self.class_indices)
-#        avail = sum([len(x) for x in self.pidx_pairs])
-#        if num_pos > avail:
-#            num_pos = avail
-#            self.fac1 = 3.0
-#            self.fac2 = 1.0
-#        else:
-#            self.fac1 = 3.0
-#            self.fac2 = 2.0 
-#        num_pos = min(num_pos,sum([len(x) for x in self.pidx_pairs]))
-#        self.fpos = self.positive_pairs(rnclasses, num_pos)
-#        self.fneg = self.negative_pairs(negcls, int(self.fac1*num_pos))
-#        random.shuffle(self.fpos)
-#        random.shuffle(self.fneg)
 
     def sample_pairs(self):
         self.pidx_pairs = []
@@ -180,7 +141,6 @@ class PairedData:
                         self.fpos.append(tup)
                         spos[str(tup)] = True
                         break
-            #for i, idx in enumerate(ipts):
                 pool = classes[:]
                 class_weight_copy = class_weight[:]
                 pool.remove(cls)
@@ -231,7 +191,6 @@ class PairedData:
         x=[min(num_per_bin[i],bs) for i,bs in enumerate(bin_sizes)]
         diff = num - sum(x)
         flag=True
-        #pdb.set_trace()
         while flag and diff > 0:
             for i in range(len(x)):
                 if bin_sizes[i] > x[i]:
@@ -248,7 +207,7 @@ class PairedData:
 
         return neg_idx_pairs
 
-    def resample(self, full, num, model, dictionary, device, bert=False, norm=True, bsz=32, typ='neg'):
+    def resample(self, full, num, model, dictionary, device, bert=False, bsz=32, typ='neg'):
         model.eval()
         cpu = torch.device('cpu')
         dists = []
@@ -262,19 +221,13 @@ class PairedData:
             last = min(len(full), i+bsz)
             intoks = full[i:last]
             with torch.no_grad():
+                hidden = None
+                data1, data2 = package_pair(self.data, intoks, [0]*bsz, dictionary, bert=bert, is_train=False)
+                data1, data2 = bt_on_device(data1, device, bert=bert), bt_on_device(data2, device, bert=bert)
                 if not bert:
-                    data1, data2, _, target1, target2 = package_pair(self.data, intoks, [0]*bsz, dictionary, is_train=False)
-                    data1, data2 = data1.to(device), data2.to(device)
                     hidden = model.init_hidden(data1.size(1))
-                else:
-                    data1, data2, _, target1, target2 = package_pair_bert(self.data, intoks, [0]*bsz, dictionary, is_train=False)
-                    data1, data2 = bt_on_device(data1, device), bt_on_device(data2, device)
-                    hidden = None
-                _, r1, r2, _, _ = model.forward(data1, data2, hidden, evaluate=True)
-                if norm:
-                    dist = torch.norm(F.normalize(r1,dim=1)-F.normalize(r2,dim=1), dim=1) #- margin
-                else:
-                    dist = torch.norm(r1-r2, dim=1)
+                _, r1, r2, _, _ = model.forward(data1, data2, hidden)
+                dist = torch.norm(F.normalize(r1,dim=1)-F.normalize(r2,dim=1), dim=1)
                 dists.append(dist.to(cpu))
             del data1, data2, hidden, r1, r2
             torch.cuda.empty_cache()
@@ -284,48 +237,21 @@ class PairedData:
             sleep(0)
         print('\n')
         dist_mat = torch.cat(dists)
-        if typ == 'pos':
-            min_val,min_idx = torch.topk(dist_mat,num,dim=0,largest=True)
-            midx = min_idx.tolist()
-            mval = min_val.tolist()
-            midx2 = [x for i,x in enumerate(midx)]
-        else: 
-            min_val,min_idx = torch.topk(dist_mat,num,dim=0,largest=False)
-            midx = min_idx.tolist()
-            mval = min_val.tolist()
-            midx2 = [x for i,x in enumerate(midx)]
-        #if len(midx2)<10000:
-        #    midx2 = midx
-        return min_val,[full[x] for x in midx2]
+        lar = (typ == 'pos')
+        _, min_idx = torch.topk(dist_mat,num,dim=0,largest=lar)
+        midx = min_idx.tolist()
+        midx2 = [x for i,x in enumerate(midx)]
+        return [full[x] for x in midx2]
 
-    def sample(self, epoch, model, dictionary, device, bert=False, norm=True, rpos=True, rneg=True, bsz=32):
-        #npos = int(len(self.fpos) / self.fac2)
-        #nneg = int(len(self.fneg) / (self.fac1 * self.fac2/2))
-        if epoch == 1 or (not rpos and not rneg):
-            #self.sample_pairs2()
-            npos = int(len(self.fpos) / self.fac2)
-            nneg = int(len(self.fneg) / (self.fac1 * self.fac2/2))
+    def sample(self, epoch, model, dictionary, device, bert=False, rsamp=True, bsz=32):
+        npos = int(len(self.fpos) / self.fac2)
+        nneg = int(len(self.fneg) / (self.fac1 * self.fac2/2))
+        if epoch == 1 or not rsamp:
             neg = self.fneg[:nneg]
             pos = self.fpos[:npos]
-            mvp,mvn = None,None
-        elif not rpos:
-            #self.sample_pairs()
-            mvp=None
-            mvn,neg = self.resample(self.fneg, nneg, model, dictionary, device, bert, norm, bsz, 'neg')
-            npos = len(neg) / 2
-            pos = self.fpos[:npos]
-        elif not rneg:
-            #self.sample_pairs()
-            mvp,pos = self.resample(self.fpos, npos, model, dictionary, device, bert, norm, bsz, 'pos')
-            nneg = len(pos) * 2
-            neg = self.fneg[:nneg]
-            mvn=None
         else:
-            #self.sample_pairs()
-            npos = int(len(self.fpos) / self.fac2)
-            nneg = int(len(self.fneg) / (self.fac1 * self.fac2/2))
-            mvp,pos = self.resample(self.fpos, npos, model, dictionary, device, bert, norm, bsz, 'pos')
-            mvn,neg = self.resample(self.fneg, nneg, model, dictionary, device, bert, norm, bsz, 'neg')
+            pos = self.resample(self.fpos, npos, model, dictionary, device, bert, bsz, 'pos')
+            neg = self.resample(self.fneg, nneg, model, dictionary, device, bert, bsz, 'neg')
             npos = len(pos)
             nneg = len(neg)
         plbl = [1]*npos
@@ -333,4 +259,4 @@ class PairedData:
         dt = pos+neg
         lbl = plbl+nlbl
         print(f'Data size = {len(lbl)}')
-        return mvp,mvn,shuffle_pairs(dt,lbl)
+        return shuffle_pairs(dt,lbl)
