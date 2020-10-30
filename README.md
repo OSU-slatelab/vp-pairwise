@@ -17,7 +17,7 @@ All code was developed on Python 3.7. Additional requirements include:
 
 # Usage
 For fine-tuning hyperparameters, run:
-<code> bash run_gs.sh <\code>
+<code> bash run_gs.sh </code>
 
 
 # References
