@@ -18,7 +18,7 @@ All code was developed on Python 3.7. Additional requirements include:
 # Usage
 * For fine-tuning hyperparameters, run: <code> bash run_gs.sh </code>. Logs will be saved in the file specified by <code>--validation-log</code>.
 * For testing, run: <code> bash run_test.sh </code>.
-
+Specify the path to the pretrained bert model in <code>--prebert-path</code>. All other arguments can be seen in the parser definition in <code>util.py</code>.
 # References
 
 \[1\] Raia Hadsell, Sumit Chopra, and Yann LeCun, “Dimensionality reduction by learning an invariant mapping,” in 2006 IEEE Computer Society Conference on ComputerVision and Pattern Recognition (CVPR’06). IEEE, 2006.
