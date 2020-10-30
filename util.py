@@ -192,20 +192,20 @@ def get_base_parser():
                         help='use k-fold cross validation')
     parser.add_argument('--validation-log', type=str, default='rnn.attn.kfold.log',
                         help='location to store kfold logs')
-    parser.add_argument('--lamb', type=float, default=0.6,
-                        help='')
+    parser.add_argument('--lamb', type=float, default=0.25,
+                        help='weight of 1-nearest-neighbor scores during inference')
     parser.add_argument('--encoder-type', type=str, default='rnn',
                         help='')
     parser.add_argument('--prebert-path', type=str, default='',
                         help='path to pretrained bert model')
     parser.add_argument('--bert-pooling', type=str, default='mean',
-                        help='')
-    parser.add_argument('--ploss_wt', type=float, default=1.0,
-                        help='')
+                        help='mean pool the bert outputs, otherwise use [CLS] representation')
+    parser.add_argument('--ploss_wt', type=float, default=0.25,
+                        help='weight of contrastive loss during training')
     parser.add_argument('--beta-max', type=float, default=15.0,
-                        help='')
+                        help='max alpha value to use for the beta distribution')
     parser.add_argument('--beta-min', type=float, default=0.5,
-                        help='')
+                        help='min alpha value to use for the beta distribution')
     parser.add_argument('--num-filters', type=int, default=300,
                         help='number of filters to use for 2D convolution')
     parser.add_argument('--filter-ht', type=int, default=300,
