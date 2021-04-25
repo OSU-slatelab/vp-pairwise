@@ -33,3 +33,13 @@ Specify the path to the pretrained bert model in <code>--prebert-path</code>. Al
 \[4\] Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio, “A structured self-attentive sentence embedding,” in ICLR 2017.
 
 \[5\] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova, “Bert: Pre-training of deep bidirec-tional transformers for language understanding,” in NAACL 2019.
+
+# Citation
+<code>
+@article{sunder2020handling,
+  title={Handling Class Imbalance in Low-Resource Dialogue Systems by Combining Few-Shot Classification and Interpolation},
+  author={Sunder, Vishal and Fosler-Lussier, Eric},
+  journal={ICASSP},
+  year={2021}
+}
+</code>

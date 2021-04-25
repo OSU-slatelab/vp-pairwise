@@ -181,7 +181,7 @@ if __name__ == "__main__":
             class_ind.append(idx_i)
         data_key2 = get_keys(class_ind, traindev_data, args.num_keys)
         torch.cuda.empty_cache()
-        test_acc, macf1, y_pred, y_true = trainer.evaluate(data_key2, data_test, model, bsz=args.test_bsize)
+        test_acc, macf1, y_pred, y_true = trainer.evaluate(data_key2, data_test, best_model, bsz=args.test_bsize)
         print('-' * 92)
         print(f'| test acc. {test_acc:.4f} | test macro. F1 {macf1:.4f} |')
         print('-' * 92)
