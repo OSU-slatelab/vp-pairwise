@@ -35,11 +35,11 @@ Specify the path to the pretrained bert model in <code>--prebert-path</code>. Al
 \[5\] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova, “Bert: Pre-training of deep bidirec-tional transformers for language understanding,” in NAACL 2019.
 
 # Citation
-<code>
+```bibtex
 @article{sunder2020handling,
   title={Handling Class Imbalance in Low-Resource Dialogue Systems by Combining Few-Shot Classification and Interpolation},
   author={Sunder, Vishal and Fosler-Lussier, Eric},
   journal={ICASSP},
   year={2021}
 }
-</code>
+```
