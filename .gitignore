@@ -1,2 +1,5 @@
 *sw*
 __pycache__/
+build
+dist
+vp_pairwise.egg-info
